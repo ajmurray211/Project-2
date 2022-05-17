@@ -1,70 +1,77 @@
-# Getting Started with Create React App
+# Project Overview
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project Schedule
 
-## Available Scripts
+|  Day | Deliverable | Status
+|---|---| ---|
+|Day 1| Project Description/ API research | Incomplete
+|Day 2| Wireframes / Priority Matrix / Timeline | Incomplete
+|Day 3| Core Application Structure | Incomplete
+|Day 4| MVP & Bug Fixes | Incomplete
+|Day 5| Final Touches | Incomplete
+|Day 6| Present | Incomplete
 
-In the project directory, you can run:
+## Project Description
 
-### `npm start`
+This website will allow you to search for an aquatic animal and get information or look for a recipes based on an animals name. You will be given information about the animal, look at recipes that include that animal and you can save some recipes to your favorites. The intent of this website is to create a one stop shop for anglers and eventually hunters where they can access a wide variety of information in one location.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Wireframes
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Mobile
+- [Home] (https://imgur.com/a/OlrsBi7)
+- [Info] (https://imgur.com/JSM6FTn)
+- [Recipes] (https://imgur.com/0P7bhwy)
 
-### `npm test`
+Desktop
+- [Home] (https://imgur.com/jIDLTZH)
+- [Info] (https://imgur.com/CSovPIS)
+- [Recipes] (https://imgur.com/e76MfNv)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Time/Priority Matrix 
 
-### `npm run build`
+- [Link](https://imgur.com/laEAJwf)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### MVP
+- Get and display data for recipes based on the user search
+- Favorites bar user can add and take away from 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### PostMVP
+- Add land based animals to search page
+- Add a route where rules and regulations on hunting and fishing can be viewed
+- Add a route for weather reports based on location
+- Display fish data based on active favorite
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+#### MVP
+| Component | Priority | Estimated Time | Actual Time |
+| --- | :---: |  :---: | :---: | 
+| Recipes layout      | H | 3hrs  | |
+| Favorites layout     | H | 3hrs  | |
+| Home layout          | H | 2hrs  | |
+| Api research         | H | 10hrs | |
+| Page styling         | M | 3hrs  | |
+| Total                |   | 21hrs | |
 
-### `npm run eject`
+#### PostMVP
+| Component | Priority | Estimated Time | Actual Time |
+| --- | :---: |  :---: | :---: | 
+| Fish layout          | H | 4hrs  | |
+| Hunting option          | M | 2hrs | |
+| Rules and regulations   | M | 3hrs | |
+| Weather                     | M | 2hrs | |
+| Total                   |   | 11hrs | |
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Code Snippet for API calls 
+```js
+  // This request is for salt water fish that has 115 options 
+  fetch('https://www.fishwatch.gov/api/species')
+    .then(response => response.json())
+    .then(data => console.log(data))
+    .catch(() => console.log('Call failed'))
+```
+```js
+ // Fetch request for recipe information based on name (using the 'q' portion of the url)
+  fetch('https://api.edamam.com/api/recipes/v2?type=public&q=butterfish&app_id=f6eefa00&app_key=8ebf1e1223eb8c398580458b31f482d8')
+    .then(response => response.json())
+    .then(data => console.log(data))
+    .catch(() => console.log('Call failed'))
+```
