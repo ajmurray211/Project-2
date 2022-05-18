@@ -1,7 +1,7 @@
 const Favorites = () => {
     return ( 
         <div>
-            <p>this will hold be where the selected favorite meals will display</p>
+            <p>this will be where the selected favorite meals will display</p>
         </div>
      );
 }

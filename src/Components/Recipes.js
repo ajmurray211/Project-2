@@ -17,6 +17,10 @@ const Recipes = () => {
         setSearchVal('')
     }
 
+    const handleFavorite = (event) => {
+        console.log(event.target.id)
+    }
+
     useEffect(() => {
         fetch('https://api.edamam.com/api/recipes/v2?type=public&q=beef&app_id=f6eefa00&app_key=8ebf1e1223eb8c398580458b31f482d8')
             .then(response => response.json())
@@ -27,6 +31,7 @@ const Recipes = () => {
     const mappedInfo = recipes.map((foodInfo, i) => {
         return <RecipeTile
             food={foodInfo.recipe}
+            handleFavorite={handleFavorite}
         ></RecipeTile>
     })
 
