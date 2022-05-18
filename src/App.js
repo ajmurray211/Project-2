@@ -6,7 +6,7 @@ import Favorites from './Components/Favorites';
 import { useState } from 'react'
 
 function App() {
-  const [favorite, setFavorites] = useState(['beef', 'deer', 'trout'])
+  const [favorite, setFavorites] = useState([])
 
   return (
     <div className="App">
@@ -14,13 +14,12 @@ function App() {
         <Link to='/'> Home </Link>
         <Link to='/recipes'> Recipes </Link>
         <Link to='/favorites'> Favorites </Link>
-
       </nav>
 
       <div>
         <Routes>
           <Route path='/' element={<Home />}></Route>
-          <Route path='/recipes' element={<Recipes 
+          <Route path='/recipes' element={<Recipes
             favorite={favorite}
             setFavorite={setFavorites}
           />}></Route>

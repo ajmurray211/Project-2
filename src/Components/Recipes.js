@@ -1,18 +1,19 @@
 import { useState, useEffect } from "react"
-import Favorites from "./Favorites";
 import RecipeTile from "./RecipeTile";
 
 const Recipes = (props) => {
-// console.log(props)
     const [recipes, setRecipes] = useState([])
-    const [recipeSearch, setRecipeSearch] = useState('')
     const [searchVal, setSearchVal] = useState('')
 
+    // This function is linked to the form and updates the value eveytime something in the text box is changed 
     const handleChange = (event) => {
         event.preventDefault()
         setSearchVal(event.target.value)
     }
 
+    // This function handles the submit input attached to the form 
+    // It will make a fetch request to the api every time the form is submitted using the current value of the text box
+    // It will then set the state of recipes to the returned api data and return the the text box back to empty 
     const handleSubmit = (event) => {
         event.preventDefault()
 
@@ -20,22 +21,22 @@ const Recipes = (props) => {
             .then(response => response.json())
             .then(data => setRecipes(data.hits))
             .catch(() => console.log('Call failed'))
-            setSearchVal('')
+        setSearchVal('')
     }
 
+    // This function is linked the the button returned from mappedInfo
+    // It takes in the use state from app.js as a prop then makes a coppy of the array, pushes the name
+    // associated with the target to the copied array and updates the state to the new array
     const handleFavorite = (event) => {
-        console.log(event.target.id)
         event.preventDefault()
-        let copyFavorites= [...props.favorite]
-        console.log(copyFavorites)
+        let copyFavorites = [...props.favorite]
         copyFavorites.push(event.target.id)
-        console.log(copyFavorites)
         props.setFavorite(copyFavorites)
-        
     }
-    // console.log(favArray)
 
-    const mappedInfo = recipes.map((foodInfo, i) => {
+    // This takes the information from the api call and maps over it returning a recipe tile 
+    // it passes an object from the api and a function as props to the recipeTile component
+    const mappedInfo = recipes.map((foodInfo) => {
         return <RecipeTile
             food={foodInfo.recipe}
             handleFavorite={handleFavorite}

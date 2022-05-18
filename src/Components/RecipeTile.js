@@ -1,7 +1,5 @@
-import { Link } from "react-router-dom";
 
 const RecipeTile = (props) => {
-    // console.log(props.food)
     return (
         <li className="RecipeTile">
             <img src={props.food.images.REGULAR.url} alt={props.food.label} />

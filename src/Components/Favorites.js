@@ -1,16 +1,16 @@
 const Favorites = (props) => {
     let names = props.favorite
-    const mappedNames = names.map((name) =>{
-        return(
+    const mappedNames = names.map((name) => {
+        return (
             <li>{name}</li>
         )
     })
-    return ( 
+    return (
         <div>
-            <p>this will be where the selected favorite meals will display</p>
+            <p>You have favorited the below items!</p>
             {mappedNames}
         </div>
-     );
+    );
 }
- 
+
 export default Favorites;
