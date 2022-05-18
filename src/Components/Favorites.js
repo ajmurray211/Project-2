@@ -1,14 +1,14 @@
 const Favorites = (props) => {
-    let names = props.favorite
-    const mappedNames = names.map((name) => {
+    let favorites = props.favorite
+    const mappedData = favorites.map((favorite) => {
         return (
-            <li>{name}</li>
+            <a href={favorite.url} target='_blank'>{favorite.id}</a>
         )
     })
     return (
         <div>
             <p>You have favorited the below items!</p>
-            {mappedNames}
+            {mappedData}
         </div>
     );
 }

@@ -1,4 +1,5 @@
-import { useState} from "react"
+import { useState } from "react"
+import Favorites from "./Favorites";
 import RecipeTile from "./RecipeTile";
 
 const Recipes = (props) => {
@@ -27,10 +28,9 @@ const Recipes = (props) => {
     // This function is linked the the button returned from mappedInfo
     // It takes in the use state from app.js as a prop then makes a coppy of the array, pushes the name
     // associated with the target to the copied array and updates the state to the new array
-    const handleFavorite = (event) => {
-        event.preventDefault()
+    const handleFavorite = (id, url) => {
         let copyFavorites = [...props.favorite]
-        copyFavorites.push(event.target.id)
+        copyFavorites.push({id:id, url:url})
         props.setFavorite(copyFavorites)
     }
 
@@ -52,7 +52,9 @@ const Recipes = (props) => {
             <ul>
                 {mappedInfo}
             </ul>
-
+            <Favorites 
+            favorite={props.favorite}
+            ></Favorites>
         </div>
     );
 }

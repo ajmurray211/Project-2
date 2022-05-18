@@ -9,7 +9,7 @@ const RecipeTile = (props) => {
                 <p>Cuisine: {props.food.cuisineType}</p>
                 <a href={props.food.url} target='_blank'> More Information </a>
             </section>
-            <button onClick={props.handleFavorite} className="FavBtn" id={props.food.label}>Favorite</button>
+            <button onClick={() => props.handleFavorite(props.food.label, props.food.url)} className="FavBtn">Favorite</button>
         </li>
     );
 }
