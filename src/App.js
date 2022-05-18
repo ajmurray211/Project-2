@@ -6,7 +6,7 @@ import Favorites from './Components/Favorites';
 import { useState } from 'react'
 
 function App() {
-  const [favorite, setFavorites] = useState([])
+  const [favorite, setFavorites] = useState(['beef', 'deer', 'trout'])
 
   return (
     <div className="App">
@@ -20,7 +20,7 @@ function App() {
       <div>
         <Routes>
           <Route path='/' element={<Home />}></Route>
-          <Route path='/recipes' element={<Recipes
+          <Route path='/recipes' element={<Recipes 
             favorite={favorite}
             setFavorite={setFavorites}
           />}></Route>

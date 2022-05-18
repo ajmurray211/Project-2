@@ -23,16 +23,17 @@ const Recipes = (props) => {
             setSearchVal('')
     }
 
-    const handleFavorite = (event, props) => {
-        // console.log(event.target.id)
+    const handleFavorite = (event) => {
+        console.log(event.target.id)
         event.preventDefault()
         let copyFavorites= [...props.favorite]
+        console.log(copyFavorites)
         copyFavorites.push(event.target.id)
-        props.setFavorites(copyFavorites)
+        console.log(copyFavorites)
+        props.setFavorite(copyFavorites)
+        
     }
-    // console.log(props.favorite)
-
-   
+    // console.log(favArray)
 
     const mappedInfo = recipes.map((foodInfo, i) => {
         return <RecipeTile
