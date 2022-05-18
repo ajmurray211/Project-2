@@ -7,17 +7,7 @@ import Recipes from './Components/Recipes';
 import RecipeTile from './Components/RecipeTile';
 
 function App() {
-  const [searchVal, setSearchVal] = useState('')
   
-  const handleChange = (event) => {
-    setSearchVal(event.target.value)
-  }
-
-  const handleSubmit = (event) => {
-    event.preventDefault()
-    setSearchVal('')
-  }
-
   return (
     <div className="App">
       <nav>
@@ -27,11 +17,7 @@ function App() {
 
       <div>
         <Routes>
-          <Route path='/' element={<Home
-            searchVal={searchVal}
-            handleChange={handleChange}
-            handleSubmit={handleSubmit}
-          />}></Route>
+          <Route path='/' element={<Home/>}></Route>
           <Route path='/recipes' element={<Recipes/>}></Route>
         </Routes>
       </div>
