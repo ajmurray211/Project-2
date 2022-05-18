@@ -3,6 +3,7 @@ import { Route, Routes, Link } from 'react-router-dom'
 import Home from './Components/Home';
 import Recipes from './Components/Recipes';
 import Favorites from './Components/Favorites';
+import About from './Components/About'
 import { useState } from 'react'
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
         <Link to='/'> Home </Link>
         <Link to='/recipes'> Recipes </Link>
         <Link to='/favorites'> Favorites </Link>
+        <Link to='/about'> About </Link>
       </nav>
 
       <div>
@@ -27,6 +29,7 @@ function App() {
             favorite={favorite}
             setFavorites={setFavorites}
           />}></Route>
+          <Route path='/about' element={<About/>}></Route>
         </Routes>
       </div>
     </div>

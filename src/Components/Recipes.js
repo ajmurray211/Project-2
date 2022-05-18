@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react"
+import { useState} from "react"
 import RecipeTile from "./RecipeTile";
 
 const Recipes = (props) => {
@@ -52,6 +52,7 @@ const Recipes = (props) => {
             <ul>
                 {mappedInfo}
             </ul>
+
         </div>
     );
 }
