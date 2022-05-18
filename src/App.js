@@ -1,10 +1,8 @@
-import logo from './logo.svg';
 import './App.css';
 import { Route, Routes, Link } from 'react-router-dom'
-import { useState, useEffect } from 'react'
 import Home from './Components/Home';
 import Recipes from './Components/Recipes';
-import RecipeTile from './Components/RecipeTile';
+import Favorites from './Components/Favorites';
 
 function App() {
   
@@ -13,12 +11,15 @@ function App() {
       <nav>
         <Link to='/'> Home </Link>
         <Link to='/recipes'> Recipes </Link>
+        <Link to='/favorites'> Favorites </Link>
+
       </nav>
 
       <div>
         <Routes>
           <Route path='/' element={<Home/>}></Route>
           <Route path='/recipes' element={<Recipes/>}></Route>
+          <Route path='/favorites' element={<Favorites/>}></Route>
         </Routes>
       </div>
     </div>
