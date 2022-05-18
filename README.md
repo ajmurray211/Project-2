@@ -63,15 +63,15 @@ Desktop
 ## Code Snippet for API calls 
 ```js
   // This request is for salt water fish that has 115 options 
-  fetch('https://www.fishwatch.gov/api/species')
-    .then(response => response.json())
-    .then(data => console.log(data))
-    .catch(() => console.log('Call failed'))
+  // fetch('https://www.fishwatch.gov/api/species')
+  //   .then(response => response.json())
+  //   .then(data => console.log(data))
+  //   .catch(() => console.log('Call failed'))
 ```
 ```js
  // Fetch request for recipe information based on name (using the 'q' portion of the url)
-  fetch('https://api.edamam.com/api/recipes/v2?type=public&q=butterfish&app_id=f6eefa00&app_key=8ebf1e1223eb8c398580458b31f482d8')
-    .then(response => response.json())
-    .then(data => console.log(data))
-    .catch(() => console.log('Call failed'))
+  // fetch('https://api.edamam.com/api/recipes/v2?type=public&q=butterfish&app_id=f6eefa00&app_key=8ebf1e1223eb8c398580458b31f482d8')
+  //   .then(response => response.json())
+  //   .then(data => console.log(data))
+  //   .catch(() => console.log('Call failed'))
 ```

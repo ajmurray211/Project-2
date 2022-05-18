@@ -4,10 +4,11 @@ import { Route, Routes, Link } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 import Home from './Components/Home';
 import Recipes from './Components/Recipes';
+import RecipeTile from './Components/RecipeTile';
 
 function App() {
   const [searchVal, setSearchVal] = useState('')
-
+  
   const handleChange = (event) => {
     setSearchVal(event.target.value)
   }
@@ -31,7 +32,7 @@ function App() {
             handleChange={handleChange}
             handleSubmit={handleSubmit}
           />}></Route>
-          <Route path='/recipes' element={<Recipes></Recipes>}></Route>
+          <Route path='/recipes' element={<Recipes/>}></Route>
         </Routes>
       </div>
     </div>
