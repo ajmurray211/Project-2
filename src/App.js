@@ -6,8 +6,6 @@ import About from './Components/About'
 import { useState } from 'react'
 
 function App() {
-  const [favorite, setFavorites] = useState([])
-
   return (
     <div className="App">
       <nav>
@@ -20,13 +18,13 @@ function App() {
         <Routes>
           <Route path='/' element={<Home />}></Route>
           <Route path='/recipes' element={<Recipes
-            favorite={favorite}
-            setFavorite={setFavorites}
+            // favorite={favorite}
+            // setFavorite={setFavorites}
+            // handleClerar={handleClear}
           />}></Route>
           <Route path='/about' element={<About/>}></Route>
         </Routes>
       </div>
-
     </div>
   );
 }

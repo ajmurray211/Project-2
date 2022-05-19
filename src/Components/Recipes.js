@@ -5,6 +5,11 @@ import RecipeTile from "./RecipeTile";
 const Recipes = (props) => {
     const [recipes, setRecipes] = useState([])
     const [searchVal, setSearchVal] = useState('')
+    const [favorite, setFavorites] = useState([])
+
+    const handleClear = () => {
+        setFavorites([])
+    }
 
     // This function is linked to the form and updates the value eveytime something in the text box is changed 
     const handleChange = (event) => {
@@ -29,9 +34,9 @@ const Recipes = (props) => {
     // It takes in the use state from app.js as a prop then makes a coppy of the array, pushes the name
     // associated with the target to the copied array and updates the state to the new array
     const handleFavorite = (id, url) => {
-        let copyFavorites = [...props.favorite]
-        copyFavorites.push({id:id, url:url})
-        props.setFavorite(copyFavorites)
+        let copyFavorites = [...favorite]
+        copyFavorites.push({ id: id, url: url })
+        setFavorites(copyFavorites)
     }
 
     // This takes the information from the api call and maps over it returning a recipe tile 
@@ -52,9 +57,12 @@ const Recipes = (props) => {
             <ul>
                 {mappedInfo}
             </ul>
-            <Favorites 
-            favorite={props.favorite}
-            ></Favorites>
+            <footer>
+                <Favorites
+                    favorite={favorite}
+                    handleClear={handleClear}
+                ></Favorites>
+            </footer>
         </div>
     );
 }

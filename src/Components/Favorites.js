@@ -7,7 +7,7 @@ const Favorites = (props) => {
     })
     return (
         <div>
-            <p>You have favorited the below items!</p>
+            <p>You have favorited the below items!<button onClick={props.handleClear}>Clear all</button></p>
             {mappedData}
         </div>
     );
