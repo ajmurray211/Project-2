@@ -4,10 +4,10 @@
 
 |  Day | Deliverable | Status
 |---|---| ---|
-|Day 1| Project Description/ API research | Incomplete
-|Day 2| Wireframes / Priority Matrix / Timeline | Incomplete
-|Day 3| Core Application Structure | Incomplete
-|Day 4| MVP & Bug Fixes | Incomplete
+|Day 1| Project Description/ API research | Complete
+|Day 2| Wireframes / Priority Matrix / Timeline | Complete
+|Day 3| Core Application Structure | Complete
+|Day 4| MVP & Bug Fixes | Complete
 |Day 5| Final Touches | Incomplete
 |Day 6| Present | Incomplete
 
@@ -44,21 +44,21 @@ Desktop
 #### MVP
 | Component | Priority | Estimated Time | Actual Time |
 | --- | :---: |  :---: | :---: | 
-| Recipes layout      | H | 3hrs  | |
-| Favorites layout     | H | 3hrs  | |
-| Home layout          | H | 2hrs  | |
-| Api research         | H | 10hrs | |
-| Page styling         | M | 3hrs  | |
-| Total                |   | 21hrs | |
+| Recipes layout       | H | 3hrs  |3hrs|
+| Favorites layout     | H | 3hrs  |4hrs|
+| Home layout          | H | 2hrs  |2hrs|
+| Api research         | H | 10hrs |12hrs|
+| Page styling         | M | 3hrs  |4hrs|
+| Total                |   | 21hrs | 25hrs |
 
 #### PostMVP
 | Component | Priority | Estimated Time | Actual Time |
 | --- | :---: |  :---: | :---: | 
-| Fish layout          | H | 4hrs  | |
-| Hunting option          | M | 2hrs | |
-| Rules and regulations   | M | 3hrs | |
-| Weather                     | M | 2hrs | |
-| Total                   |   | 11hrs | |
+| Fish layout             | H | 4hrs |0hrs|
+| Hunting option          | M | 2hrs |0hrs|
+| Rules and regulations   | M | 3hrs |0hrs|
+| Weather                 | M | 2hrs |0rhs|
+| Total                   |   | 11hrs |0hrs|
 
 ## Code Snippet for API calls 
 ```js

@@ -1,6 +1,6 @@
 const About = () => {
     return ( 
-        <div>
+        <div className="about">
             <p>This website is designed for people that love nature. This is your one stop shop for all your 
                 information currently this website is under construction. The operational portion of this site 
                 currently is the recipe portion. You can type in an animal or general recipe that you would like. 
