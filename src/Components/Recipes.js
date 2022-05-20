@@ -26,7 +26,6 @@ const Recipes = (props) => {
         fetch(`https://api.edamam.com/api/recipes/v2?type=public&q=${searchVal}&app_id=f6eefa00&app_key=8ebf1e1223eb8c398580458b31f482d8`)
             .then(response => response.json())
             .then(data => setRecipes(data.hits))
-            .catch(() => console.log('Call failed'))
         setSearchVal('')
     }
 
