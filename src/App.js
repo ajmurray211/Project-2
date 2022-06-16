@@ -5,13 +5,13 @@ import Recipes from './Components/Recipes';
 import About from './Components/About'
 import Hunting from './Components/Hunting';
 import Fishing from './Components/Fishing';
-import logo from './Components/w2w_logo.png'
+import logo from './Components/images/w2w_logo.png'
 
 function App() {
   return (
     <div className="App">
       <nav className='main_nav'>
-        <Link to='/'><img classname='logo' src={logo} alt='W2W logo' /> </Link>
+        <Link to='/'><img classname='logo' src={logo} alt='W2W logo' /></Link>
         <Link to='/fishing'> Fishing </Link>
         <Link to='/hunting'> Hunting </Link>
         <Link to='/recipes'> Recipes </Link>
