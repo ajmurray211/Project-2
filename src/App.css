@@ -5,6 +5,7 @@
 
 html{
 background-image: url('/src/Components/paw-paw-woods.jpeg');
+/* background-color: rgba(71, 71, 6, 0.568); */
 background-size: cover;
 background-repeat: no-repeat;
 background-attachment: fixed;
@@ -16,11 +17,26 @@ nav{
   justify-content: space-around;
   position: sticky;
   top: 2vw;
-  background-color: rgba(255, 255, 255, 0.594);
-  border: 1px solid black;
+  background-color: rgba(121, 118, 118, 0.363);
+  /* border: 1px solid rgb(0, 0, 0); */
   padding: 2vw;
   border-radius: 1vw;
   margin: 1vw;
+}
+
+a{
+  text-decoration: none;
+}
+
+nav a{
+  color: inherit;
+  text-decoration: none;
+  font-size: 3vw;
+  font-weight: 700;
+}
+a:hover{
+  color: azure;
+  cursor: pointer;
 }
 
 footer{
@@ -29,7 +45,7 @@ footer{
   bottom: 2vw;
   overflow-y: scroll;
   border: 1px solid black;
-  background-color: rgba(255, 255, 255, 0.622);
+  background-color: rgba(78, 76, 76, 0.849);
   width: 90%;
 }
 
@@ -39,6 +55,12 @@ footer a{
 
 ul{
   padding: unset;
+}
+
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 .RecipeTile{
@@ -57,6 +79,14 @@ padding: 2vw;
   margin: 1vw;
 }
 
-.about{
-  
+.title{
+  font-size: 3vw;
+  margin-top: 20vw;
+  text-shadow: 5px 5px 5px olive;
+}
+
+nav img{
+  border-radius: 1vw;
+  height: 5rem;
+  width: 5rem;
 }

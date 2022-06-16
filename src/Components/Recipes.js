@@ -52,7 +52,7 @@ const Recipes = (props) => {
                 <input type='text' placeholder='Enter an animal or food' onChange={handleChange} value={searchVal}></input>
                 <input type='submit' ></input>
             </form>
-            <ul>
+            <ul className="container">
                 {mappedInfo}
             </ul>
             <footer>

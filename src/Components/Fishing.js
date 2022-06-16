@@ -32,14 +32,14 @@ const Fishing = () => {
     })
     return (
         <>
-            <h1>This page will show you fish information when you click the button</h1>
-            <form onSubmit={handleSubmit}>
+            <h1>This page will display fishing information. This feature is still under development stay tuned!</h1>
+            {/* <form onSubmit={handleSubmit}>
                 <input type='text' placeholder='Enter the name of a fish' onChange={handleChange} value={search}></input>
                 <input type='submit'></input>
             </form>
             <ul>
                 {mappedFish}
-            </ul>
+            </ul> */}
         </>
     );
 }
