@@ -1,3 +1,5 @@
+import { OffcanvasBody,OffcanvasHeader,Offcanvas, Button } from "reactstrap"
+
 const Favorites = (props) => {
     let favorites = props.favorite
     const mappedData = favorites.map((favorite) => {
@@ -9,6 +11,7 @@ const Favorites = (props) => {
         <div>
             <p>You have favorited the below items!<button onClick={props.handleClear}>Clear all</button></p>
             {mappedData}
+
         </div>
     );
 }

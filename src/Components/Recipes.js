@@ -1,6 +1,8 @@
 import { useState } from "react"
 import Favorites from "./Favorites";
 import RecipeTile from "./RecipeTile";
+import { OffcanvasBody, OffcanvasHeader,Offcanvas, Button } from "reactstrap"
+
 
 const Recipes = (props) => {
     const [recipes, setRecipes] = useState([])
@@ -55,6 +57,7 @@ const Recipes = (props) => {
             <ul className="container">
                 {mappedInfo}
             </ul>
+
             <footer>
                 <Favorites
                     favorite={favorite}
