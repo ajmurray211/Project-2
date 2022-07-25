@@ -54,9 +54,6 @@ const fishingData = [
         "name": "Rock bass"
     },
     {
-        "name": "Giant sea bass"
-    },
-    {
         "name": "Spotted bass"
     },
     {
