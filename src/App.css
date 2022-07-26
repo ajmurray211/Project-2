@@ -86,6 +86,11 @@ padding: 2vw;
   text-shadow: 5px 5px 5px olive;
 }
 
+.RecipeTile img{
+  max-width: 360px;
+  max-height: 360px;
+}
+
 nav img{
   border-radius: 1vw;
   height: 5rem;
@@ -99,4 +104,8 @@ nav img{
   font-size: 3vw;
   font-weight: 550;
   /* text-shadow: 5px 5px 5px olive; */
+}
+
+body{
+  background-color: rgba(255, 0, 0, 0);
 }

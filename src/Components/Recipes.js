@@ -1,7 +1,7 @@
 import { useState } from "react"
 import Favorites from "./Favorites";
 import RecipeTile from "./RecipeTile";
-import { OffcanvasBody, OffcanvasHeader, Offcanvas, Button } from "react-bootstrap"
+import {Offcanvas, Button } from "react-bootstrap"
 
 const Recipes = (props) => {
     const [recipes, setRecipes] = useState([])
@@ -56,13 +56,14 @@ const Recipes = (props) => {
             <form onSubmit={handleSubmit}>
                 <input type='text' placeholder='Enter an animal or food' onChange={handleChange} value={searchVal}></input>
                 <input type='submit' ></input>
+                <Button variant="primary" onClick={handleShow}> Favorites </Button>
             </form>
             <ul className="container">
                 {mappedInfo}
             </ul>
 
             <>
-                <Button variant="primary" onClick={handleShow}> Favorites </Button>
+                
 
                 <Offcanvas show={show} onHide={handleClose}>
                     <Favorites
@@ -71,13 +72,6 @@ const Recipes = (props) => {
                     ></Favorites>
                 </Offcanvas>
             </>
-
-            {/* <footer>
-                <Favorites
-                    favorite={favorite}
-                    handleClear={handleClear}
-                ></Favorites>
-            </footer> */}
         </div>
     );
 }
