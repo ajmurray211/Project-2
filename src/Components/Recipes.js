@@ -1,13 +1,16 @@
 import { useState } from "react"
 import Favorites from "./Favorites";
 import RecipeTile from "./RecipeTile";
-import { OffcanvasBody, OffcanvasHeader,Offcanvas, Button } from "reactstrap"
-
+import { OffcanvasBody, OffcanvasHeader, Offcanvas, Button } from "react-bootstrap"
 
 const Recipes = (props) => {
     const [recipes, setRecipes] = useState([])
     const [searchVal, setSearchVal] = useState('')
     const [favorite, setFavorites] = useState([])
+
+    const [show, setShow] = useState(false);
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
 
     const handleClear = () => {
         setFavorites([])
@@ -58,12 +61,23 @@ const Recipes = (props) => {
                 {mappedInfo}
             </ul>
 
-            <footer>
+            <>
+                <Button variant="primary" onClick={handleShow}> Favorites </Button>
+
+                <Offcanvas show={show} onHide={handleClose}>
+                    <Favorites
+                        favorite={favorite}
+                        handleClear={handleClear}
+                    ></Favorites>
+                </Offcanvas>
+            </>
+
+            {/* <footer>
                 <Favorites
                     favorite={favorite}
                     handleClear={handleClear}
                 ></Favorites>
-            </footer>
+            </footer> */}
         </div>
     );
 }
