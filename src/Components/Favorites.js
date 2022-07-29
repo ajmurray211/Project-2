@@ -12,12 +12,12 @@ const Favorites = (props) => {
             <Offcanvas.Header closeButton>
                 <Offcanvas.Title>Favorited items</Offcanvas.Title>
             </Offcanvas.Header>
+            <button onClick={props.handleClear}>Clear all</button>
             <Offcanvas.Body>
                 <ul>
                     {mappedData}
                 </ul>
             </Offcanvas.Body>
-            <button onClick={props.handleClear}>Clear all</button>
 
         </div>
     );

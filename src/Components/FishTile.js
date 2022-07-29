@@ -1,12 +1,9 @@
 const FishTile = (porps) => {
-    console.log(porps)
+    console.log(porps.fish)
     return (
         <li>
-            <img src={porps.fish['Image Gallery'][0].src}></img>
-            <p>Name: {porps.fish['Species Name']}</p>
-            {/* <p>Quote: {porps.fish.Quote}</p> */}
-            {/* <p>Color: {porps.fish.Color}</p>
-            <p>Path: {porps.fish.Path}</p> */}
+            <img src={porps.fish.imgMain} alt={porps.fish.name}></img>
+            <p>Name: {porps.fish.name}</p>
         </li>
     );
 }
