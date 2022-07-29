@@ -2,7 +2,7 @@ const fishingData = [
     // trout section
     {
         "name": "Brown trout",
-        "imgMain": "",
+        "imgMain": "https://imgur.com/XqJNatq.jpg",
         "imgGallery": ["", "", ""],
         "color": " ",
         "size": "",
@@ -17,25 +17,39 @@ const fishingData = [
         "generalInfo": ["", "", ""]
     },
     {
-        "name": "Rainbow trout"
+        "name": "Rainbow trout",
+        "imgMain": "https://imgur.com/vl2e8nt.jpg"
+
     },
     {
-        "name": "Golden trout"
+        "name": "Golden trout",
+        "imgMain": "https://imgur.com/sGZleFB.jpg"
+
     },
     {
-        "name": "Lake trout"
+        "name": "Lake trout",
+        "imgMain": "https://imgur.com/kz9Z2ZQ.jpg"
+
     },
     {
-        "name": "Tiger trout"
+        "name": "Tiger trout",
+        "imgMain":"https://imgur.com/1XldheF.jpg"
+
     },
     {
-        "name": "Cutthroat trout"
+        "name": "Cutthroat trout",
+        "imgMain": "https://imgur.com/DTZCcqI.jpg"
+
     },
     {
-        "name": "Sea trout"
+        "name": "Sea trout",
+        "imgMain": "https://imgur.com/ZOK5jni.jpg"
+
     },
     {
         "name": "Bull trout",
+        "imgMain": "https://imgur.com/IJniAf4.jpg"
+
     },
     // Bass section
     {

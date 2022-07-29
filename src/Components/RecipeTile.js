@@ -1,7 +1,8 @@
 
 const RecipeTile = (props) => {
+    console.log(props.food.images.REGULAR.url)
     return (
-        <li className="RecipeTile">
+        <li className="Tile">
             <img src={props.food.images.REGULAR.url} alt={props.food.label} />
             <section>
                 <p className="FoodName">Name: {props.food.label}</p>
