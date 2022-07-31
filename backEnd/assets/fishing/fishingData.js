@@ -5,7 +5,7 @@ const fishingData = [
         "imgMain": "https://imgur.com/XqJNatq.jpg",
         "imgGallery": ["", "", ""],
         "color": " ",
-        "size": "",
+        "size": "13in",
         "country": " ",
         "region": "",
         "diet": "",
@@ -53,128 +53,194 @@ const fishingData = [
     },
     // Bass section
     {
-        "name": "Largemouth bass"
+        "name": "Largemouth bass",
+        "imgMain": "https://imgur.com/hOQpAJG.jpg"
+
     },
     {
-        "name": "Striped bass"
+        "name": "Striped bass",
+        "imgMain": "https://imgur.com/qFuDTGh.jpg"
+
     },
     {
-        "name": "Black sea bass"
+        "name": "Black sea bass",
+        "imgMain": "https://imgur.com/1PseHzU.jpg"
+
     },
     {
-        "name": "Smallmouth bass"
+        "name": "Smallmouth bass",
+        "imgMain": "https://imgur.com/6cIhen4.jpg"
+
     },
     {
-        "name": "Rock bass"
+        "name": "Rock bass",
+        "imgMain": "https://imgur.com/buTsawY.jpg"
+
     },
     {
-        "name": "Spotted bass"
+        "name": "Spotted bass",
+        "imgMain": "https://imgur.com/109Dp0P.jpg"
+
     },
     {
-        "name": "Yellow bass"
+        "name": "Yellow bass",
+        "imgMain": "https://imgur.com/WYj9TNt.jpg"
+
     },
     // salmon section
     {
-        "name": "Sockeye salmon"
+        "name": "Sockeye salmon",
+        "imgMain": "https://imgur.com/wy7CF64.jpg"
+
     },
     {
-        "name": "Atlantic salmon"
+        "name": "Atlantic salmon",
+        "imgMain": "https://imgur.com/A6d5DSY.jpg"
+
     },
     {
-        "name": "Chum salmon"
+        "name": "Chum salmon",
+        "imgMain": "https://imgur.com/ztOlBOA.jpg"
+
     },
     {
-        "name": "Chinook salmon"
+        "name": "Chinook salmon",
+        "imgMain": "https://imgur.com/TOoTMNQ.jpg"
+
     },
     {
-        "name": "Coho salmon"
+        "name": "Coho salmon",
+        "imgMain": "https://imgur.com/rw7ybxv.jpg"
+
     },
     {
-        "name": "Pink salmon"
+        "name": "Pink salmon",
+        "imgMain": "https://imgur.com/EMV494d.jpg"
+
     },
-    {
-        "name": "Black sea salmon"
-    },
+
     // types of sunfish
     {
-        "name": "Spotted sunfish"
+        "name": "Spotted sunfish",
+        "imgMain": "https://imgur.com/3y8ZAHl.jpg"
+
     },
     {
-        "name": "Dollar sunfish"
+        "name": "Dollar sunfish",
+        "imgMain": "https://imgur.com/E0hyN2X.jpg"
+
     },
     {
-        "name": "Orangespotted sunfish"
+        "name": "Orange spotted sunfish",
+        "imgMain": "https://imgur.com/3X2OxEI.jpg"
+
     },
     {
-        "name": "Lonegear sunfish"
+        "name": "Lonegear sunfish",
+        "imgMain": "https://imgur.com/Czw2J3o.jpg"
+
     },
     {
-        "name": "Redbrest sunfish"
+        "name": "Redbrest sunfish",
+        "imgMain": "https://imgur.com/HgcMbCW.jpg"
+
     },
     {
-        "name": "Green sunfish"
+        "name": "Green sunfish",
+        "imgMain": "https://imgur.com/r0wLfFr.jpg"
+
     },
     {
-        "name": "Redear sunfish"
+        "name": "Redear sunfish",
+        "imgMain": "https://imgur.com/pBSVt41.jpg"
+
     },
     {
-        "name": "Bluegill"
+        "name": "Bluegill",
+        "imgMain": "https://imgur.com/cPvCSbk.jpg"
+
     },
     {
-        "name": "Pumpkinseed"
+        "name": "Pumpkinseed",
+        "imgMain": "https://imgur.com/2UzvftX.jpg"
+
     },
     {
-        "name": "Warmouth"
+        "name": "Warmouth",
+        "imgMain": "https://imgur.com/9cgSor4.jpg"
+
     },
     // pike types
     {
-        "name": "Northern pike"
+        "name": "Northern pike",
+        "imgMain": "https://imgur.com/nvITm61.jpg"
+
     },
     {
-        "name": "Chain pickerel"
+        "name": "Chain pickerel",
+        "imgMain": "https://imgur.com/EsYKNo6.jpg"
+
     },
     {
-        "name": "Clear muskie"
+        "name": "Clear muskie",
+        "imgMain": "https://imgur.com/zTnJtPV.jpg"
+
     },
     {
-        "name": "Gress pickerel"
+        "name": "Grass pickerel",
+        "imgMain": "https://imgur.com/xheeDo5.jpg"
+
     },
     {
-        "name": "Muskellunge"
+        "name": "Muskellunge",
+        "imgMain": "https://imgur.com/zqTZj9S.jpg"
+
     },
     {
-        "name": "Redfin pickerel"
+        "name": "Redfin pickerel",
+        "imgMain": "https://imgur.com/zvY7MCD.jpg"
+
     },
     {
-        "name": "Tiger Muskie"
+        "name": "Tiger Muskie",
+        "imgMain": "https://imgur.com/uoyxe8z.jpg"
+
     },
     // types of catfish
     {
-        "name": "Wels catfish"
+        "name": "Blue catfish",
+        "imgMain": "https://imgur.com/k8dGyVd.jpg"
+
     },
     {
-        "name": "Blue catfish"
+        "name": "Flathead catfish",
+        "imgMain": "https://imgur.com/JjvJ5yK.jpg"
+
     },
     {
-        "name": "Flathead catfish"
+        "name": "Channel catfish",
+        "imgMain": "https://imgur.com/TYEyB03.jpg"
+
     },
     {
-        "name": "Channel catfish"
+        "name": "White catfish",
+        "imgMain": "https://imgur.com/XdwpgWX.jpg"
+
     },
     {
-        "name": "White catfish"
+        "name": "Yellow bullhead",
+        "imgMain": "https://imgur.com/pQjkTUv.jpg"
+
     },
     {
-        "name": "Yellow bullhead"
+        "name": "Brown bullhead",
+        "imgMain": "https://imgur.com/7vyxwYS.jpg"
+
     },
     {
-        "name": "Brown bullhead"
-    },
-    {
-        "name": "Black bullhead"
-    },
-    {
-        "name": "Headwater catfish"
+        "name": "Black bullhead",
+        "imgMain": "https://imgur.com/uZylbpQ.jpg"
+
     },
 ]
 
