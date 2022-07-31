@@ -2,7 +2,7 @@ const huntingData = [
     {
         // hoofed animals
         "name": "Rocky mountain elk",
-        "imgMain": "",
+        "imgMain": "https://imgur.com/zeVpYYc.jpg",
         "imgGallery": ["", "", ""],
         "color": " ",
         "size": "",
@@ -16,305 +16,386 @@ const huntingData = [
         "generalInfo": ["", "", ""]
     },
     {
-        "name": "Moose"
+        "name": "Dall sheep",
+        "imgMain": "https://imgur.com/5XRG4LX.jpg",
     },
     {
-        "name": "Pronhorn"
+        "name": "Whit-tailed deer",
+        "imgMain": "https://imgur.com/97cElhS.jpg",
     },
     {
-        "name": "Dall sheep"
+        "name": "Mule deer",
+        "imgMain": "https://imgur.com/Nu6UbCz.jpg",
     },
     {
-        "name": "Whit-tailed deer"
+        "name": "American bison",
+        "imgMain": "https://imgur.com/KuAbLej.jpg",
     },
     {
-        "name": "Mule deer"
+        "name": "Sika deer",
+        "imgMain": "https://imgur.com/vb2s6Nx.jpg",
     },
     {
-        "name": "American bison"
+        "name": "Blacktail deer",
+        "imgMain": "https://imgur.com/SOBrRYn.jpg",
     },
     {
-        "name": "Bighorn sheep"
+        "name": "Coues deer",
+        "imgMain": "https://imgur.com/1cVejhX.jpg",
     },
     {
-        "name": "Sika deer"
+        "name": "Roosevelt elk",
+        "imgMain": "https://imgur.com/SQecY2G.jpg",
     },
     {
-        "name": "Columbia blacktail deer"
+        "name": "Tule elk",
+        "imgMain": "https://imgur.com/LTwHIo8.jpg",
     },
     {
-        "name": "Coues deer"
+        "name": "Barren ground caribou",
+        "imgMain": "https://imgur.com/uyg8ukS.jpg",
     },
     {
-        "name": "Roosevelt elk"
+        "name": "Mountain caribou",
+        "imgMain": "https://imgur.com/ZKVlG5o.jpg",
     },
     {
-        "name": "Tule elk"
+        "name": "Woodland caribou",
+        "imgMain": "https://imgur.com/hjrsfV5.jpg",
     },
     {
-        "name": "Barren ground caribou"
+        "name": "Alaska yukon moose",
+        "imgMain": "https://imgur.com/O4pOYQA.jpg",
     },
     {
-        "name": "Mountain caribou"
+        "name": "Shiras moose",
+        "imgMain": "https://imgur.com/Neg8hWB.jpg",
     },
     {
-        "name": "Woodland caribou"
+        "name": "Muskox",
+        "imgMain": "https://imgur.com/pSk6s4X.jpg",
     },
     {
-        "name": "Alaska youkon moose"
+        "name": "American mountain goat",
+        "imgMain": "https://imgur.com/r8Tkgif.jpg",
     },
     {
-        "name": "Shiras moose"
+        "name": "Pronghorn antelope",
+        "imgMain": "https://imgur.com/1KYArnI.jpg",
     },
     {
-        "name": "Muskox"
+        "name": "Desert bighorn sheep",
+        "imgMain": "https://imgur.com/hCTaO1l.jpg",
     },
     {
-        "name": "American mountain goat"
+        "name": "Rocky mountain bighorn sheep",
+        "imgMain": "https://imgur.com/FVQKzQE.jpg",
     },
     {
-        "name": "Pronghorn antelope"
+        "name": "Stone sheep",
+        "imgMain": "https://imgur.com/o3E3Kyy.jpg",
     },
     {
-        "name": "California bighorn sheep"
-    },
-    {
-        "name": "Desert bighorn sheep"
-    },
-    {
-        "name": "Rockey mountain bighorn sheep"
-    },
-    {
-        "name": "Stone sheep"
-    },
-    {
-        "name": "Hog"
+        "name": "Boar",
+        "imgMain": "https://imgur.com/v2E3KUR.jpg",
     },
     // Bears
     {
-        "name": "Alaska brown bear"
+        "name": "Alaska brown bear",
+        "imgMain": ".jpg",
     },
     {
-        "name": "Black bear"
+        "name": "Black bear",
+        "imgMain": ".jpg",
     },
     {
-        "name": "Grizzly bear"
+        "name": "Grizzly bear",
+        "imgMain": ".jpg",
     },
     // Big Cats
     {
-        "name": "Cougar"
+        "name": "Cougar",
+        "imgMain": ".jpg",
     },
     {
-        "name": "Bobcat"
+        "name": "Bobcat",
+        "imgMain": ".jpg",
     },
     // Squirrles
     {
-        "name": "Eastern grey squirrel"
+        "name": "Eastern grey squirrel",
+        "imgMain": ".jpg",
     },
     {
-        "name": "Fox squirrel"
+        "name": "Fox squirrel",
+        "imgMain": ".jpg",
     },
     {
-        "name": "Western grey squirrel"
+        "name": "Western grey squirrel",
+        "imgMain": ".jpg",
     },
     {
-        "name": "American red Squirrel"
+        "name": "American red Squirrel",
+        "imgMain": ".jpg",
     },
     {
-        "name": "Aberts squirrel"
+        "name": "Aberts squirrel",
+        "imgMain": ".jpg",
     },
     {
-        "name": "Arizona grey squirrel"
+        "name": "Arizona grey squirrel",
+        "imgMain": ".jpg",
     },
     //cotton tails 
     {
-        "name": "Swamp rabbit"
+        "name": "Swamp rabbit",
+        "imgMain": ".jpg",
     },
     {
-        "name": "Desert cottontail"
+        "name": "Desert cottontail",
+        "imgMain": ".jpg",
     },
     {
-        "name": "Eastern cottontail"
+        "name": "Eastern cottontail",
+        "imgMain": ".jpg",
     },
     {
-        "name": "Mountain cottontail"
+        "name": "Mountain cottontail",
+        "imgMain": ".jpg",
     },
     {
-        "name": "Marsh rabbit"
+        "name": "Marsh rabbit",
+        "imgMain": ".jpg",
     },
     {
-        "name": "New England cottontail"
+        "name": "New England cottontail",
+        "imgMain": ".jpg",
     },
     // coyotes
     {
-        "name": "Western coyotes"
+        "name": "Western coyotes",
+        "imgMain": ".jpg",
     },
     {
-        "name": "Centeral U.S. coyotes"
+        "name": "Centeral U.S. coyotes",
+        "imgMain": ".jpg",
     },
     {
-        "name": "Eastern coyotes"
+        "name": "Eastern coyotes",
+        "imgMain": ".jpg",
     },
     //various small game 
     {
-        "name": "American beaver"
+        "name": "American beaver",
+        "imgMain": ".jpg",
     },
     {
-        "name": "Long tailed weasel"
+        "name": "Long tailed weasel",
+        "imgMain": ".jpg",
     },
     {
-        "name": "Muskrat"
+        "name": "Muskrat",
+        "imgMain": ".jpg",
     },
     {
-        "name": "Mink"
+        "name": "Mink",
+        "imgMain": ".jpg",
     },
     {
-        "name": "Nutria"
+        "name": "Nutria",
+        "imgMain": ".jpg",
     },
     {
-        "name": "Groundhog"
+        "name": "Groundhog",
+        "imgMain": ".jpg",
     },
     {
-        "name": "River otter"
+        "name": "River otter",
+        "imgMain": ".jpg",
     },
     {
-        "name": "Raccoon"
+        "name": "Raccoon",
+        "imgMain": ".jpg",
     },
     {
-        "name": "Opossum"
+        "name": "Opossum",
+        "imgMain": ".jpg",
     },
     {
-        "name": "Skunk"
+        "name": "Skunk",
+        "imgMain": ".jpg",
     },
     {
-        "name": "Fox"
+        "name": "Fox",
+        "imgMain": ".jpg",
     },
     //Water foul
     //geese
     {
-        "name": "Canada goose"
+        "name": "Canada goose",
+        "imgMain": ".jpg",
     },
     {
-        "name": "Snow goose"
+        "name": "Snow goose",
+        "imgMain": ".jpg",
     },
     {
-        "name": "White-fronted goose"
+        "name": "White-fronted goose",
+        "imgMain": ".jpg",
     },
     {
-        "name": "Ross goose"
+        "name": "Ross goose",
+        "imgMain": ".jpg",
     },
     {
-        "name": "Atlantic brant"
+        "name": "Atlantic brant",
+        "imgMain": ".jpg",
     },
     {
-        "name": "Pacific brant"
+        "name": "Pacific brant",
+        "imgMain": ".jpg",
     },
     {
-        "name": "Emperor goose"
+        "name": "Emperor goose",
+        "imgMain": ".jpg",
     },
     {
-        "name": "Barnacle goose"
+        "name": "Barnacle goose",
+        "imgMain": ".jpg",
     },
     {
-        "name": "Cackling goose"
+        "name": "Cackling goose",
+        "imgMain": ".jpg",
     },
     //Ducks
     {
-        "name": "American black duck"
+        "name": "American black duck",
+        "imgMain": ".jpg",
     },
     {
-        "name": "American wigeon"
+        "name": "American wigeon",
+        "imgMain": ".jpg",
     },
     {
-        "name": "Blue-winged teal"
+        "name": "Blue-winged teal",
+        "imgMain": ".jpg",
     },
     {
-        "name": "Cinnamon teal"
+        "name": "Cinnamon teal",
+        "imgMain": ".jpg",
     },
     {
-        "name": "Eurasian wigeon"
+        "name": "Eurasian wigeon",
+        "imgMain": ".jpg",
     },
     {
-        "name": "Gladwall"
+        "name": "Gladwall",
+        "imgMain": ".jpg",
     },
     {
-        "name": "Green-winged teal"
+        "name": "Green-winged teal",
+        "imgMain": ".jpg",
     },
     {
-        "name": "Mallard"
+        "name": "Mallard",
+        "imgMain": ".jpg",
     },
     {
-        "name": "Mottled duck"
+        "name": "Mottled duck",
+        "imgMain": ".jpg",
     },
     {
-        "name": "Northern pintail"
+        "name": "Northern pintail",
+        "imgMain": ".jpg",
     },
     {
-        "name": "Northern shoveler"
+        "name": "Northern shoveler",
+        "imgMain": ".jpg",
     },
     {
-        "name": "Wood duck"
+        "name": "Wood duck",
+        "imgMain": ".jpg",
     },
     {
-        "name": "Harlequin duck"
+        "name": "Harlequin duck",
+        "imgMain": ".jpg",
     },
     {
-        "name": "Long-tailed duck"
+        "name": "Long-tailed duck",
+        "imgMain": ".jpg",
     },
     {
-        "name": "Ring-necked duck"
+        "name": "Ring-necked duck",
+        "imgMain": ".jpg",
     },
     //diving birds
     {
-        "name": "Barrows goldeneye"
+        "name": "Barrows goldeneye",
+        "imgMain": ".jpg",
     },
     {
-        "name": "Black scoter"
+        "name": "Black scoter",
+        "imgMain": ".jpg",
     },
     {
-        "name": "Bufflehead"
+        "name": "Bufflehead",
+        "imgMain": ".jpg",
     },
     {
-        "name": "Canvasback"
+        "name": "Canvasback",
+        "imgMain": ".jpg",
     },
     {
-        "name": "Common eider"
+        "name": "Common eider",
+        "imgMain": ".jpg",
     },
     {
-        "name": "Common goldeneye"
+        "name": "Common goldeneye",
+        "imgMain": ".jpg",
     },
     {
-        "name": "Common merganser"
+        "name": "Common merganser",
+        "imgMain": ".jpg",
     },
     {
-        "name": "Greater scaup"
+        "name": "Greater scaup",
+        "imgMain": ".jpg",
     },
     {
-        "name": "Hooded merganser"
+        "name": "Hooded merganser",
+        "imgMain": ".jpg",
     },
     {
-        "name": "King eider"
+        "name": "King eider",
+        "imgMain": ".jpg",
     },
     {
-        "name": "Lesser scaup"
+        "name": "Lesser scaup",
+        "imgMain": ".jpg",
     },
     {
-        "name": "Red-brested merganser"
+        "name": "Red-brested merganser",
+        "imgMain": ".jpg",
     },
     {
-        "name": "Redhead"
+        "name": "Redhead",
+        "imgMain": ".jpg",
     },
     {
-        "name": "Surf scoter"
+        "name": "Surf scoter",
+        "imgMain": ".jpg",
     },
     {
-        "name": "White-winged scoter"
+        "name": "White-winged scoter",
+        "imgMain": ".jpg",
     },
     {
-        "name": "Specaled eider"
+        "name": "Specaled eider",
+        "imgMain": ".jpg",
     },
     {
-        "name": "Stellers eider"
+        "name": "Stellers eider",
+        "imgMain": ".jpg",
     },
 ]
 
