@@ -4,243 +4,376 @@ const fishingData = [
         "name": "Brown trout",
         "imgMain": "https://imgur.com/XqJNatq.jpg",
         "imgGallery": ["", "", ""],
+        "typeOfWater": "Fresh",
+        "avgLifespan": "5 years",
+        "avgLength": "12-14",
+        "avgWeight": "2.5-10 lbs",
         "color": " ",
-        "size": "13in",
         "country": " ",
         "region": "",
         "diet": "",
         "habitat": "",
         "breedingSeason": "",
-        "typeOfWater": "Fresh",
-        "lifespan": "",
         "endangeredRating": "",
         "generalInfo": ["", "", ""]
     },
     {
         "name": "Rainbow trout",
-        "imgMain": "https://imgur.com/vl2e8nt.jpg"
-
+        "imgMain": "https://imgur.com/vl2e8nt.jpg",
+        "typeOfWater": "Fresh",
+        "avgLifespan": "3-4 years",
+        "avgLength": "20-30 in",
+        "avgWeight": "2-16 lbs",
     },
     {
         "name": "Golden trout",
-        "imgMain": "https://imgur.com/sGZleFB.jpg"
-
+        "imgMain": "https://imgur.com/sGZleFB.jpg",
+        "typeOfWater": "Fresh",
+        "avgLifespan": "7-9 years",
+        "avgLength": "10-14 in",
+        "avgWeight": "1 lb",
     },
     {
         "name": "Lake trout",
-        "imgMain": "https://imgur.com/kz9Z2ZQ.jpg"
-
+        "imgMain": "https://imgur.com/kz9Z2ZQ.jpg",
+        "typeOfWater": "Fresh",
+        "avgLifespan": "7-8 years",
+        "avgLength": "24-36 in",
+        "avgWeight": "40 lbs",
     },
     {
         "name": "Tiger trout",
-        "imgMain":"https://imgur.com/1XldheF.jpg"
-
+        "imgMain": "https://imgur.com/1XldheF.jpg",
+        "typeOfWater": "Fresh",
+        "avgLifespan": "10 years",
+        "avgLength": "10-16 in",
+        "avgWeight": "5 lbs",
     },
     {
         "name": "Cutthroat trout",
-        "imgMain": "https://imgur.com/DTZCcqI.jpg"
-
+        "imgMain": "https://imgur.com/DTZCcqI.jpg",
+        "typeOfWater": "Fresh",
+        "avgLifespan": "6-8 years",
+        "avgLength": "6-40 in",
+        "avgWeight": "2-5 lbs",
     },
     {
         "name": "Sea trout",
-        "imgMain": "https://imgur.com/ZOK5jni.jpg"
-
+        "imgMain": "https://imgur.com/ZOK5jni.jpg",
+        "typeOfWater": "Salt",
+        "avgLifespan": "9-10 years",
+        "avgLength": "15-25 in",
+        "avgWeight": "2-4 lbs",
     },
     {
         "name": "Bull trout",
-        "imgMain": "https://imgur.com/IJniAf4.jpg"
-
+        "imgMain": "https://imgur.com/IJniAf4.jpg",
+        "typeOfWater": "Fresh",
+        "avgLifespan": "10-12 years",
+        "avgLength": "24-34 in",
+        "avgWeight": "3-9 lbs",
     },
     // Bass section
     {
         "name": "Largemouth bass",
-        "imgMain": "https://imgur.com/hOQpAJG.jpg"
-
+        "imgMain": "https://imgur.com/hOQpAJG.jpg",
+        "typeOfWater": "Fresh",
+        "avgLifespan": "25 years",
+        "avgLength": "18 in",
+        "avgWeight": "5 lbs",
     },
     {
         "name": "Striped bass",
-        "imgMain": "https://imgur.com/qFuDTGh.jpg"
-
+        "imgMain": "https://imgur.com/qFuDTGh.jpg",
+        "typeOfWater": "Fresh / Salt",
+        "avgLifespan": "30 years",
+        "avgLength": "24-36 in",
+        "avgWeight": "10-30 lbs",
     },
     {
         "name": "Black sea bass",
-        "imgMain": "https://imgur.com/1PseHzU.jpg"
-
+        "imgMain": "https://imgur.com/1PseHzU.jpg",
+        "typeOfWater": "Salt",
+        "avgLifespan": "8-12 years",
+        "avgLength": "12-18 in",
+        "avgWeight": "1-4 lbs",
     },
     {
         "name": "Smallmouth bass",
-        "imgMain": "https://imgur.com/6cIhen4.jpg"
-
+        "imgMain": "https://imgur.com/6cIhen4.jpg",
+        "typeOfWater": "Fresh",
+        "avgLifespan": "6-14 years",
+        "avgLength": "",
+        "avgWeight": "",
     },
     {
         "name": "Rock bass",
-        "imgMain": "https://imgur.com/buTsawY.jpg"
-
+        "imgMain": "https://imgur.com/buTsawY.jpg",
+        "typeOfWater": "Fresh",
+        "avgLifespan": "5-8 years",
+        "avgLength": "6-10 in",
+        "avgWeight": "<1 lb",
     },
     {
         "name": "Spotted bass",
-        "imgMain": "https://imgur.com/109Dp0P.jpg"
-
+        "imgMain": "https://imgur.com/109Dp0P.jpg",
+        "typeOfWater": "Fresh / Salt",
+        "avgLifespan": "6 years",
+        "avgLength": "25 in",
+        "avgWeight": "11 lbs",
     },
     {
         "name": "Yellow bass",
-        "imgMain": "https://imgur.com/WYj9TNt.jpg"
-
+        "imgMain": "https://imgur.com/WYj9TNt.jpg",
+        "typeOfWater": "Fresh",
+        "avgLifespan": "6 years",
+        "avgLength": "18 in",
+        "avgWeight": "<1 lb",
     },
     // salmon section
     {
         "name": "Sockeye salmon",
-        "imgMain": "https://imgur.com/wy7CF64.jpg"
-
+        "imgMain": "https://imgur.com/wy7CF64.jpg",
+        "typeOfWater": "Fresh / Salt",
+        "avgLifespan": "5 years",
+        "avgLength": "18-31 in",
+        "avgWeight": "4-15 lbs",
     },
     {
         "name": "Atlantic salmon",
-        "imgMain": "https://imgur.com/A6d5DSY.jpg"
-
+        "imgMain": "https://imgur.com/A6d5DSY.jpg",
+        "typeOfWater": "Fresh / Salt",
+        "avgLifespan": "5-8 years",
+        "avgLength": "28-30 in",
+        "avgWeight": "8-12 lbs",
     },
     {
         "name": "Chum salmon",
-        "imgMain": "https://imgur.com/ztOlBOA.jpg"
-
+        "imgMain": "https://imgur.com/ztOlBOA.jpg",
+        "typeOfWater": "Fresh / Salt",
+        "avgLifespan": "3-5 years",
+        "avgLength": "42 in",
+        "avgWeight": "30-35 lbs",
     },
     {
         "name": "Chinook salmon",
-        "imgMain": "https://imgur.com/TOoTMNQ.jpg"
-
+        "imgMain": "https://imgur.com/TOoTMNQ.jpg",
+        "typeOfWater": "Fresh / Salt",
+        "avgLifespan": "4-5 years",
+        "avgLength": "36 in",
+        "avgWeight": "30 lbs",
     },
     {
         "name": "Coho salmon",
-        "imgMain": "https://imgur.com/rw7ybxv.jpg"
-
+        "imgMain": "https://imgur.com/rw7ybxv.jpg",
+        "typeOfWater": "Fresh / Salt",
+        "avgLifespan": "2-7 years",
+        "avgLength": "24-30 in",
+        "avgWeight": "8-12 lbs",
     },
     {
         "name": "Pink salmon",
-        "imgMain": "https://imgur.com/EMV494d.jpg"
-
+        "imgMain": "https://imgur.com/EMV494d.jpg",
+        "typeOfWater": "Fresh / Salt",
+        "avgLifespan": "2 years",
+        "avgLength": "20-25 in",
+        "avgWeight": "3.5-5 lbs",
     },
 
     // types of sunfish
     {
         "name": "Spotted sunfish",
-        "imgMain": "https://imgur.com/3y8ZAHl.jpg"
-
+        "imgMain": "https://imgur.com/3y8ZAHl.jpg",
+        "typeOfWater": "Fresh",
+        "avgLifespan": "5 years",
+        "avgLength": "4 in",
+        "avgWeight": "1 lb",
     },
     {
         "name": "Dollar sunfish",
-        "imgMain": "https://imgur.com/E0hyN2X.jpg"
-
+        "imgMain": "https://imgur.com/E0hyN2X.jpg",
+        "typeOfWater": "Fresh",
+        "avgLifespan": "6 years",
+        "avgLength": "4-5 in",
+        "avgWeight": "1 lb",
     },
     {
         "name": "Orange spotted sunfish",
-        "imgMain": "https://imgur.com/3X2OxEI.jpg"
-
+        "imgMain": "https://imgur.com/3X2OxEI.jpg",
+        "typeOfWater": "Fresh",
+        "avgLifespan": "4-7 years",
+        "avgLength": "1-5 in",
+        "avgWeight": "1 lb",
     },
     {
         "name": "Lonegear sunfish",
-        "imgMain": "https://imgur.com/Czw2J3o.jpg"
-
+        "imgMain": "https://imgur.com/Czw2J3o.jpg",
+        "typeOfWater": "Fresh",
+        "avgLifespan": "6 years",
+        "avgLength": "7-9 in",
+        "avgWeight": "1 lb",
     },
     {
         "name": "Redbrest sunfish",
-        "imgMain": "https://imgur.com/HgcMbCW.jpg"
-
+        "imgMain": "https://imgur.com/HgcMbCW.jpg",
+        "typeOfWater": "Fresh",
+        "avgLifespan": "7 years",
+        "avgLength": "4 in",
+        "avgWeight": "1 lb",
     },
     {
         "name": "Green sunfish",
-        "imgMain": "https://imgur.com/r0wLfFr.jpg"
-
+        "imgMain": "https://imgur.com/r0wLfFr.jpg",
+        "typeOfWater": "Fresh",
+        "avgLifespan": "4-6 years",
+        "avgLength": "3-7 in",
+        "avgWeight": "1-2 lb",
     },
     {
         "name": "Redear sunfish",
-        "imgMain": "https://imgur.com/pBSVt41.jpg"
-
+        "imgMain": "https://imgur.com/pBSVt41.jpg",
+        "typeOfWater": "Fresh",
+        "avgLifespan": "6 years",
+        "avgLength": "8-9 in",
+        "avgWeight": "1 lb",
     },
     {
         "name": "Bluegill",
-        "imgMain": "https://imgur.com/cPvCSbk.jpg"
-
+        "imgMain": "https://imgur.com/cPvCSbk.jpg",
+        "typeOfWater": "Fresh",
+        "avgLifespan": "4-6 years",
+        "avgLength": "7.5 in",
+        "avgWeight": "1-4 lbs",
     },
     {
         "name": "Pumpkinseed",
-        "imgMain": "https://imgur.com/2UzvftX.jpg"
-
+        "imgMain": "https://imgur.com/2UzvftX.jpg",
+        "typeOfWater": "Fresh",
+        "avgLifespan": "6-8 years",
+        "avgLength": "4-6 in",
+        "avgWeight": "1 lb",
     },
     {
         "name": "Warmouth",
-        "imgMain": "https://imgur.com/9cgSor4.jpg"
-
+        "imgMain": "https://imgur.com/9cgSor4.jpg",
+        "typeOfWater": "Fresh",
+        "avgLifespan": "5 years",
+        "avgLength": "8-9 in",
+        "avgWeight": "1 lb",
     },
     // pike types
     {
         "name": "Northern pike",
-        "imgMain": "https://imgur.com/nvITm61.jpg"
-
+        "imgMain": "https://imgur.com/nvITm61.jpg",
+        "typeOfWater": "Fresh",
+        "avgLifespan": "7-10 years",
+        "avgLength": "22-28 in",
+        "avgWeight": "2-15 lbs",
     },
     {
         "name": "Chain pickerel",
-        "imgMain": "https://imgur.com/EsYKNo6.jpg"
-
-    },
-    {
-        "name": "Clear muskie",
-        "imgMain": "https://imgur.com/zTnJtPV.jpg"
-
+        "imgMain": "https://imgur.com/EsYKNo6.jpg",
+        "typeOfWater": "Fresh",
+        "avgLifespan": "3-5 years",
+        "avgLength": "10-18 in",
+        "avgWeight": "2-3 lbs",
     },
     {
         "name": "Grass pickerel",
-        "imgMain": "https://imgur.com/xheeDo5.jpg"
-
-    },
-    {
-        "name": "Muskellunge",
-        "imgMain": "https://imgur.com/zqTZj9S.jpg"
-
+        "imgMain": "https://imgur.com/xheeDo5.jpg",
+        "typeOfWater": "Fresh",
+        "avgLifespan": "3-5 years",
+        "avgLength": "10-12 in",
+        "avgWeight": "1 lb",
     },
     {
         "name": "Redfin pickerel",
-        "imgMain": "https://imgur.com/zvY7MCD.jpg"
-
+        "imgMain": "https://imgur.com/zvY7MCD.jpg",
+        "typeOfWater": "Fresh",
+        "avgLifespan": "3-5 years",
+        "avgLength": "10-12 in",
+        "avgWeight": "1 lb",
+    },
+    {
+        "name": "Clear muskie",
+        "imgMain": "https://imgur.com/zTnJtPV.jpg",
+        "typeOfWater": "Fresh",
+        "avgLifespan": "15 years",
+        "avgLength": "28-48 in",
+        "avgWeight": "15-36 lbs",
     },
     {
         "name": "Tiger Muskie",
-        "imgMain": "https://imgur.com/uoyxe8z.jpg"
-
+        "imgMain": "https://imgur.com/uoyxe8z.jpg",
+        "typeOfWater": "Fresh",
+        "avgLifespan": "15 years",
+        "avgLength": "22-30 in",
+        "avgWeight": "18 lbs",
+    },
+    {
+        "name": "Muskellunge",
+        "imgMain": "https://imgur.com/zqTZj9S.jpg",
+        "typeOfWater": "Fresh",
+        "avgLifespan": "18 years",
+        "avgLength": "28-48 in",
+        "avgWeight": "15-36 lbs",
     },
     // types of catfish
     {
         "name": "Blue catfish",
-        "imgMain": "https://imgur.com/k8dGyVd.jpg"
-
+        "imgMain": "https://imgur.com/k8dGyVd.jpg",
+        "typeOfWater": "Fresh",
+        "avgLifespan": "9-10 years",
+        "avgLength": "25-46 in",
+        "avgWeight": "81 lbs",
     },
     {
         "name": "Flathead catfish",
-        "imgMain": "https://imgur.com/JjvJ5yK.jpg"
-
+        "imgMain": "https://imgur.com/JjvJ5yK.jpg",
+        "typeOfWater": "Fresh",
+        "avgLifespan": "12-14 years",
+        "avgLength": "61 in",
+        "avgWeight": "123 lbs",
     },
     {
         "name": "Channel catfish",
-        "imgMain": "https://imgur.com/TYEyB03.jpg"
-
+        "imgMain": "https://imgur.com/TYEyB03.jpg",
+        "typeOfWater": "Fresh",
+        "avgLifespan": "15 years",
+        "avgLength": "12 in",
+        "avgWeight": "2-4 lbs",
     },
     {
         "name": "White catfish",
-        "imgMain": "https://imgur.com/XdwpgWX.jpg"
-
+        "imgMain": "https://imgur.com/XdwpgWX.jpg",
+        "typeOfWater": "Fresh",
+        "avgLifespan": "8 years",
+        "avgLength": "20 in",
+        "avgWeight": ".5-2 lbs",
     },
     {
         "name": "Yellow bullhead",
-        "imgMain": "https://imgur.com/pQjkTUv.jpg"
-
+        "imgMain": "https://imgur.com/pQjkTUv.jpg",
+        "typeOfWater": "Fresh",
+        "avgLifespan": "7 years",
+        "avgLength": "7-13.5 in",
+        "avgWeight": "1-2 lbs",
     },
     {
         "name": "Brown bullhead",
-        "imgMain": "https://imgur.com/7vyxwYS.jpg"
-
+        "imgMain": "https://imgur.com/7vyxwYS.jpg",
+        "typeOfWater": "Fresh",
+        "avgLifespan": "7 years",
+        "avgLength": "7.9-19.7 in",
+        "avgWeight": "1-8 lbs",
     },
     {
         "name": "Black bullhead",
-        "imgMain": "https://imgur.com/uZylbpQ.jpg"
-
+        "imgMain": "https://imgur.com/uZylbpQ.jpg",
+        "typeOfWater": "Fresh",
+        "avgLifespan": "5 years",
+        "avgLength": "8-14 in",
+        "avgWeight": "1-2 lbs",
     },
 ]
 
