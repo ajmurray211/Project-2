@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Button, Modal, ModalHeader, ModalBody, ModalFooter} from "reactstrap";
+import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from "reactstrap";
 
 const FishTile = (props) => {
 
@@ -8,13 +8,22 @@ const FishTile = (props) => {
 
     return (
         <>
-            <li className="Tile">
-                <img src={props.fish.imgMain} alt={props.fish.name} />
+            <li className="Tile"
+                style={{
+                    backgroundImage: `url(${props.fish.imgMain})`,
+                    backgroundSize: 'contain',
+                    backgroundRepeat: 'no-repeat',
+                    backgroundPosition: 'center',
+                    height: '15vw',
+                    width: '40vw'
+                }}
+            >
+                {/* <img src={props.fish.imgMain} alt={props.fish.name} /> */}
                 <p>Name: {props.fish.name}</p>
                 <Button onClick={toggle}>More information</Button>
             </li>
 
-            <Modal isOpen={modal} toggle={toggle} centered={true} fullscreen="xl" size="xl">
+            <Modal isOpen={modal} toggle={toggle} centered={true} size="lg">
                 <ModalHeader toggle={toggle}>{props.fish.name}</ModalHeader>
                 <ModalBody>
                     <p>Diet: {props.fish.diet}</p>
