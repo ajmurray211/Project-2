@@ -5,22 +5,30 @@ const FishTile = (props) => {
 
     const [modal, setModal] = useState(false);
     const toggle = () => setModal(!modal);
+    const [style, setStyle] = useState(false)
+
+    const defaultStyle = {
+        backgroundImage: `url(${props.fish.imgMain})`,
+        backgroundSize: 'contain',
+        backgroundRepeat: 'no-repeat',
+        backgroundPosition: 'center',
+        height: '15vw',
+        width: '40vw',
+        opacity: style ? '.8' : '1',
+    }
 
     return (
         <>
             <li className="Tile"
-                style={{
-                    backgroundImage: `url(${props.fish.imgMain})`,
-                    backgroundSize: 'contain',
-                    backgroundRepeat: 'no-repeat',
-                    backgroundPosition: 'center',
-                    height: '15vw',
-                    width: '40vw'
-                }}
+                style={defaultStyle}
+                onMouseEnter={() => { setStyle(true) }}
+                onMouseLeave={() => { setStyle(false) }}
             >
-                {/* <img src={props.fish.imgMain} alt={props.fish.name} /> */}
                 <p>Name: {props.fish.name}</p>
-                <Button onClick={toggle}>More information</Button>
+                <Button onClick={toggle} style={{
+                    opacity: style ? '1' : '0',
+                    marginTop: '30px'
+                }} >More information</Button>
             </li>
 
             <Modal isOpen={modal} toggle={toggle} centered={true} size="lg">
