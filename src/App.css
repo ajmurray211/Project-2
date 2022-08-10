@@ -126,3 +126,22 @@ nav img{
 body{
   background-color: rgba(255, 0, 0, 0);
 }
+
+#favoritesBtn{
+  position: fixed;
+  left: 0px;
+  top: 30%;
+}
+
+#favItem{
+  padding: 5px 0px 5px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+#favItem a:hover, #favItem Button:hover{
+  color: grey;
+  font-weight: 400;
+  font-size: larger;
+}

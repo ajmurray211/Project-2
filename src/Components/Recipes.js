@@ -1,7 +1,7 @@
 import { useState } from "react"
 import Favorites from "./Favorites";
 import RecipeTile from "./RecipeTile";
-import {Offcanvas, Button } from "react-bootstrap"
+import { Offcanvas, Button } from "react-bootstrap"
 
 const Recipes = (props) => {
     const [recipes, setRecipes] = useState([])
@@ -14,6 +14,13 @@ const Recipes = (props) => {
 
     const handleClear = () => {
         setFavorites([])
+    }
+
+    const handleRemove = (dish) => {
+        // console.log(favorite)
+        const copyFavorites = [...favorite]
+        const filtered = copyFavorites.filter(item => item.id !== dish.target.id)
+        setFavorites(filtered)
     }
 
     // This function is linked to the form and updates the value eveytime something in the text box is changed 
@@ -56,22 +63,20 @@ const Recipes = (props) => {
             <form onSubmit={handleSubmit}>
                 <input type='text' placeholder='Enter an animal or food' onChange={handleChange} value={searchVal}></input>
                 <input type='submit' ></input>
-                <Button variant="primary" onClick={handleShow}> Favorites </Button>
+                <Button variant="primary" id="favoritesBtn" onClick={handleShow}> Favorites </Button>
             </form>
+
             <ul className="container">
                 {mappedInfo}
             </ul>
 
-            <>
-                
-
-                <Offcanvas show={show} onHide={handleClose}>
-                    <Favorites
-                        favorite={favorite}
-                        handleClear={handleClear}
-                    ></Favorites>
-                </Offcanvas>
-            </>
+            <Offcanvas show={show} onHide={handleClose}>
+                <Favorites
+                    favorite={favorite}
+                    handleClear={handleClear}
+                    handleRemove={handleRemove}
+                ></Favorites>
+            </Offcanvas>
         </div>
     );
 }
