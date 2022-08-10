@@ -21,7 +21,7 @@ const Hunting = () => {
             return <li>No Data</li>
         }
     })
-
+console.log(huntingData)
 
     return (
         <>
