@@ -74,22 +74,24 @@ ul{
   font-size: 2vw;
   font-weight: 700;
   color: white;
+  transition: .5s ease;
 }
 
 .Tile p{
   background-color: black;
   border-radius: 10px;
-
 }
 
-.middle {
+.holder{
+  display: flex;
+}
+
+.infoBtn {
   transition: .5s ease;
-  opacity: 0;
+  position: absolute;
+  /* top: 50%; */
   transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%)
-}
-.container:hover .middle {
-  opacity: 1;
+  -ms-transform: translate(-50%, -50%);
 }
 
 img {
