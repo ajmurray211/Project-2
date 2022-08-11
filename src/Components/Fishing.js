@@ -5,12 +5,13 @@ import { Dropdown, DropdownToggle, DropdownMenu, DropdownItem, Button } from 're
 const Fishing = () => {
     const [fishData, setFishData] = useState([])
     const [reset, setReset] = useState(true)
+    const [activeFishFamily, setActiveFishFamily] = useState('')
 
     //controls the filter toggling
     const [dropdownOpen, setDropdownOpen] = useState(false);
     const toggle = (event) => {
         event.preventDefault()
-        console.log(event)
+        // console.log(event)
         setDropdownOpen(prevState => !prevState);
     }
 
@@ -21,6 +22,7 @@ const Fishing = () => {
         fetch(`https://quiet-gorge-88095.herokuapp.com/fish/?format=json`)
             .then(response => response.json())
             .then(data => setFishData(data))
+            // .then(console.log('api call made'))
             .catch(() => console.log('Call failed'))
     }
 
@@ -32,8 +34,9 @@ const Fishing = () => {
     //filters the fish based on user selection
     const filterFish = (event) => {
         event.preventDefault()
-        // fishData.filter(arg => arg.includes)
-        console.log('hit filter for ' + event.target.name)
+        const copyData = [...fishData]
+        const filtered = copyData.filter(fish => event.target.name === fish.family)
+        setFishData(filtered)
     }
 
     //handles the reset filter button
@@ -51,8 +54,6 @@ const Fishing = () => {
         }
     })
 
-    console.log(fishData)
-
     return (
         <>
             <Dropdown isOpen={dropdownOpen} toggle={toggle} >
@@ -61,11 +62,10 @@ const Fishing = () => {
                     Family
                 </DropdownToggle>
                 <DropdownMenu>
-                    <DropdownItem header>Header</DropdownItem>
                     <DropdownItem name='Salmon' onClick={filterFish}>Salmon</DropdownItem>
                     <DropdownItem name='Sunfish' onClick={filterFish}>Sunfish</DropdownItem>
                     <DropdownItem name='Pike' onClick={filterFish}>Pike</DropdownItem>
-                    <DropdownItem name='Catfisih' onClick={filterFish}>Catfish</DropdownItem>
+                    <DropdownItem name='Catfish' onClick={filterFish}>Catfish</DropdownItem>
                 </DropdownMenu>
             </Dropdown>
 

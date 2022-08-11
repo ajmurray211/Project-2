@@ -17,7 +17,6 @@ const Recipes = (props) => {
     }
 
     const handleRemove = (dish) => {
-        // console.log(favorite)
         const copyFavorites = [...favorite]
         const filtered = copyFavorites.filter(item => item.id !== dish.target.id)
         setFavorites(filtered)
