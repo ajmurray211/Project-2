@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/Project-2/static/css/main.c4cbefbd.css",
-    "main.js": "/Project-2/static/js/main.6c1266d4.js",
+    "main.js": "/Project-2/static/js/main.168931ca.js",
     "static/js/787.9e6188a1.chunk.js": "/Project-2/static/js/787.9e6188a1.chunk.js",
     "static/media/w2w_logo.png": "/Project-2/static/media/w2w_logo.fc41d44ac67196f15852.png",
     "static/media/paw-paw-woods.jpeg": "/Project-2/static/media/paw-paw-woods.d66f572822f4b49fecfa.jpeg",
     "index.html": "/Project-2/index.html",
     "main.c4cbefbd.css.map": "/Project-2/static/css/main.c4cbefbd.css.map",
-    "main.6c1266d4.js.map": "/Project-2/static/js/main.6c1266d4.js.map",
+    "main.168931ca.js.map": "/Project-2/static/js/main.168931ca.js.map",
     "787.9e6188a1.chunk.js.map": "/Project-2/static/js/787.9e6188a1.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c4cbefbd.css",
-    "static/js/main.6c1266d4.js"
+    "static/js/main.168931ca.js"
   ]
 }
