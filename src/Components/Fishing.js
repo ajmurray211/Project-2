@@ -3,6 +3,7 @@ import FishTile from './FishTile'
 import { UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem, Button, Spinner } from 'reactstrap';
 import useFetch from './useFetch';
 import axios from 'axios'
+import searchIcon from '../Components/images/search_icon.png'
 
 
 const API_URL = 'https://quiet-gorge-88095.herokuapp.com'
@@ -14,6 +15,7 @@ const Fishing = () => {
     const [data, setData] = useState([])
     const [loading, setLoading] = useState(false)
     const [error, setError] = useState(null)
+    const [searchVal, setSearchVal] = useState('')
 
     //controls the filter toggling
     const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -60,6 +62,12 @@ const Fishing = () => {
         />
     })
 
+    const handleChange = (event) => {
+        event.preventDefault()
+        setActiveSearchBy('name')
+        setSearchVal(event.target.value)
+    }
+
     return (
         <>
             <div className="d-flex p-5 justify-content-center">
@@ -85,6 +93,17 @@ const Fishing = () => {
                         <DropdownItem name='Salt' value='typeOfWater' onClick={filterFish}> Salt </DropdownItem>
                     </DropdownMenu>
                 </UncontrolledDropdown>
+
+                <form className='search_box_wrap' onSubmit={() => setActiveFishSearch(searchVal)} >
+                    <div className='search_box'>
+                        <input onChange={handleChange} id='searchbox' className='input_search' type='text' placeholder="Search for a fish by name" />
+                    </div>
+                    <div className='search_btn'>
+                        <span className='icon'>
+                            <Button type='submit' color='light'><img src={searchIcon} /></Button>
+                        </span>
+                    </div>
+                </form>
 
             </div>
 

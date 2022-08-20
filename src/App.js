@@ -24,7 +24,7 @@ function App() {
             <Link to='/'><img classname='logo' src={logo} alt='W2W logo' /></Link>
           </NavItem>
           <NavItem active>
-            <NavLink to='/fishing'> Fishing </NavLink>
+            <NavLink href='/fishing'> Fishing </NavLink>
           </NavItem>
           <NavItem>
             <NavLink to='/hunting'> Hunting </NavLink>
