@@ -4,6 +4,7 @@ import { UncontrolledDropdown, DropdownToggle, DropdownMenu, DropdownItem, Butto
 import useFetch from './useFetch';
 import axios from 'axios'
 import searchIcon from '../Components/images/search_icon.png'
+import fishingData from './data/fishing/fishingData.js';
 
 
 const API_URL = 'https://quiet-gorge-88095.herokuapp.com'
@@ -41,11 +42,12 @@ const Fishing = () => {
     }
 
     useEffect(() => {
-        if (activeFishSearch === '') {
-            loadData(`${API_URL}/fish/?format=json`)
-        } else {
-            loadData(`${API_URL}/fish/?format=json&${activeSearchBy}=${activeFishSearch}`)
-        }
+        // if (activeFishSearch === '') {
+        //     loadData(`${API_URL}/fish/?format=json`)
+        // } else {
+        //     loadData(`${API_URL}/fish/?format=json&${activeSearchBy}=${activeFishSearch}`)
+        // }
+        setData(fishingData)
     }, [activeFishSearch])
 
     //filters the fish based on user selection
@@ -74,9 +76,7 @@ const Fishing = () => {
                 <Button color='dark' className='me-2' onClick={() => {
                     setActiveFishSearch('')
                 }}> Reset </Button>
-                <UncontrolledDropdown
-                    className="me-2"
-                >
+                <UncontrolledDropdown className="me-2">
                     <DropdownToggle color='dark' caret>Family</DropdownToggle>
                     <DropdownMenu>
                         <DropdownItem name='Salmon' value='family' onClick={filterFish} > Salmon </DropdownItem>
